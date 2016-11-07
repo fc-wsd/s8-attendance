@@ -16,10 +16,7 @@ class Attendance:
         self.student_list.append(student)
 
     def list(self):
-        name_list = [];
-        for student in self.student_list:
-            name_list.append(student.name)
-        return name_list
+        return [s.name for s in self.student_list]
 
 class TestModule(unittest.TestCase):
 
